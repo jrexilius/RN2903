@@ -4,7 +4,7 @@
 # -----------
 # This is a barebones script to test basic connectivity and functionality of the Microchip RN2903
 # LoRa module.  This is intended to be run at the command line and support manual testing and 
-# diagnostics. It can be used to do bsic sending and recieving of messages via LoRa P2P radio.
+# diagnostics. It can be used to do basic sending and receiving of messages via LoRa P2P radio.
 #
 #
 # Original Author: Jason Rexilius, https://www.jasonrexilius.com/
@@ -28,10 +28,6 @@
 ####################################################################################################
 import sys
 import logging
-# optional customized log handler
-#from logger import *
-#require_logger('DEBUG','.')
-
 from rn2903 import *
 
 
