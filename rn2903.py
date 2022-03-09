@@ -420,6 +420,7 @@ class rn2903():
       try:
         (status,running_firmware) = self.send_command('sys get ver')
         if status == 'ok':
+          running_firmware = re.sub(' +', ' ',running_firmware)
           (module,version,mm,dd,yy,tm) = running_firmware.split(' ')
       except Exception as err_msg:
         self.dev_status = 'error'
